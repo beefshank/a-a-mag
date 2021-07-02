@@ -9,6 +9,43 @@
     --color-red: #BD2026;
 }
 
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
 * {
     font-family: var(--font-primary);
 }
@@ -51,6 +88,12 @@ header .nav-content .contact {
     font-size: 24px;
 }
 
+header .nav-content .contact a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
 header .nav-content .contact a:nth-of-type(1) {
     padding-right:1em;
     margin-right: 1em;
@@ -73,6 +116,42 @@ header .nav-content nav a {
     color: var(--color-off-black);
     text-transform: uppercase;
     font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+header .nav-content nav > li {
+    align-self: flex-end;
+}
+
+header .nav-content nav li .sub-menu {
+    background-color: white;
+    list-style: none;
+    margin: 0;
+    padding: 1em;
+    position: absolute;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, .55);
+    max-height: 1px;
+    visibility: hidden;
+    transition: 275ms ease-in-out;
+    opacity: 0;
+}
+header .nav-content nav > li:hover .sub-menu {
+    visibility: visible;
+    max-height: 100vh;
+    opacity: 1;
+}
+
+header .nav-content nav li .sub-menu a {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: .5em;
+    display: block;
+    font-weight: 400;
+}
+
+header .nav-content nav li .sub-menu li:nth-last-of-type(1) a {
+    margin: 0;
 }
 
 /* footer */
