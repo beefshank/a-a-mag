@@ -7,6 +7,7 @@
     --font-acent:  'Coda', sans-serif;
     --color-off-black: #232323;
     --color-red: #BD2026;
+    --color-off-white: #ededed;
 }
 
 @font-face {
@@ -16,6 +17,9 @@
     src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
     src: local('Material Icons'),
       local('MaterialIcons-Regular'),
+      /* 
+      need to patch for local fonts
+      */
       url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
       url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
       url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
@@ -48,6 +52,10 @@
 
 * {
     font-family: var(--font-primary);
+}
+
+body {
+    margin: 0px;
 }
 
 a {
@@ -155,4 +163,45 @@ header .nav-content nav li .sub-menu li:nth-last-of-type(1) a {
 }
 
 /* footer */
+
+footer {
+    background: var(--color-off-black);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+footer .nav-content {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+footer .nav-content a {
+color: var(--color-off-white);
+font-size: 14px;
+text-align: right;
+}
+
+footer .nav-content nav {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+footer .nav-content nav li {
+    margin-left: 24px;
+}
+
+
+footer .nav-content nav li a {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+
 /* home-page  */
