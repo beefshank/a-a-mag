@@ -266,3 +266,50 @@ footer .nav-content nav li a {
 #home-page .body-content .container .column strong img {
     margin-left: .5em;
 }
+
+#home-page .hero .hero-items .item   {
+    min-width: 100vw;
+    background-image: var(--bg-img);
+    background-size: cover;
+    height: 56vh;
+    display: flex
+}
+
+#home-page .hero .hero-items .item .container {
+    flex-direction: column;
+    color: white;
+    padding-top: 10vh;
+    align-self: flex-end;
+    padding-bottom: 12.5vh;
+
+}
+
+#home-page .hero .hero-items .item .container h1 {
+    font-size: 4em;
+    font-weight: 900;
+    font-family: var(--font-acent);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#home-page .hero .hero-items .item .container p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    width: 50ch;
+}
+
+#home-page .hero .hero-items .item .container a {
+    background-color: var(--color-red);
+    color: white;
+    border-radius: .3em;
+    padding: .75em;
+    align-self: flex-start;
+    text-transform: uppercase;
+}
+
+
+
+
