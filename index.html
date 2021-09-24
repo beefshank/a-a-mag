@@ -15,6 +15,11 @@
     <header> 
         <section class="container">
             <img src="./Assets/img/global/Logo.svg" alt="A and A magnetics logo">
+            <button class="hamburger" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
             <section class="nav-content">
                 <section class="contact">
                     <a href="mailto:sales@aamag.com">
@@ -55,16 +60,9 @@
                         <a href="/info.html">Learn More</a>
                     </article>
                 </section>
-                <section class="item" style="--bg-img:url('../img/home/BG-2.jpg')">
 
-                    <article>
-                        <h1>We get the job done</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
-                        <a href="/info.html">Learn More</a>
-                    </article>
-                </section>
             </section>
-            <section class="arrows">
+            <section class="arrows" style="display: none;"> 
                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="36" viewBox="0 0 19 36" fill="none" class="arrow right">
                     <path d="M1 1L17.6667 17.6667L1 34.3333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
@@ -72,7 +70,7 @@
                     <path d="M17.6667 1L1.00002 17.6667L17.6667 34.3333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
             </section>
-            <section class="bullets"> 
+            <section class="bullets" style="display: none;"> 
                 <ul> 
                     <li></li>
                     <li></li>
@@ -121,7 +119,8 @@
             </section>
         </section>
     </footer>
-
-</body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+    <script src="Assets/js/global.js"></script>
+</body> 
 </html>
 
